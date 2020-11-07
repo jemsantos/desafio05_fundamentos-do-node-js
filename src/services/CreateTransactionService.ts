@@ -6,12 +6,7 @@ interface Request {
   value: number;
   type: 'income' | 'outcome';
 }
-/* {
-  "id": "uuid",
-  "title": "Salário",
-  "value": 3000,
-  "type": "income"
-} */
+
 class CreateTransactionService {
   private transactionsRepository: TransactionsRepository;
 

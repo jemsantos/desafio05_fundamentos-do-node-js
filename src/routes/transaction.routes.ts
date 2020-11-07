@@ -25,11 +25,11 @@ transactionRouter.post('/', (request, response) => {
   const { title, value, type } = request.body;
 
   try {
-    const creteTransaction = new CreateTransactionService(
+    const creteTransactionService = new CreateTransactionService(
       transactionsRepository,
     );
 
-    const transaction = creteTransaction.execute({
+    const transaction = creteTransactionService.execute({
       title,
       value,
       type,
